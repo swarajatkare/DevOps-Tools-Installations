@@ -1,0 +1,4 @@
+sudo apt install Docker.io -y
+sudo usermod -aG Docker Ubuntu
+newgrp Docker
+Docker run -d -p 8081:8081 sonatype/nexus3
